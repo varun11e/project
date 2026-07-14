@@ -25,5 +25,4 @@ public class consumer implements Runnable {
             System.out.println("Consumer interrupted. Shutting down.");
             return;
         }
-    }
-}
+    }}
