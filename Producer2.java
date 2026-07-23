@@ -9,7 +9,7 @@ public class Producer2 implements Runnable {
         try {
             while (true) {
                 synchronized (buffer) {
-                    while (buffer.producer2Turn==false) {
+                    while (buffer.producer2Turn==false)   {
                         buffer.wait();
                     }
                     buffer.list.add(even);

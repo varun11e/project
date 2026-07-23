@@ -12,7 +12,7 @@ public class Producer1 implements Runnable {
                     while (buffer.producer1Turn==false) {
                         buffer.wait();
                     }
-                    buffer.list.add(odd);
+                    buffer.list.add(odd) ;
                     System.out.println("Producer 1 : " + odd);
                     odd += 2;
                     buffer.producer1Turn = false;
